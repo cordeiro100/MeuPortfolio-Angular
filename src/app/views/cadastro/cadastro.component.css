@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+
+.total {
+  background-image: url("src/assets/background2.png");
+  height: 100vh;
+  background-size: cover;
+  width: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.navbar {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.navbar li {
+  margin: 0 0 0 200px;
+  font-size: 60px;
+  margin-left: 400px;
+  color: white;
+}
+i {
+  color: rgb(0, 0, 0);
+}
+
+.logo-mobile {
+  display: none;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  border: 3px solid;
+  width: 600px;
+  height: 620px;
+  border-radius: 15px;
+  animation: colors 22s ease infinite;
+  background-color: black;
+  opacity: 0.7;
+  border-style: groove;
+  box-shadow: 0px 0px 30px #04a596, 0px 0px 10px silver;
+  animation: colors 22s ease infinite;
+  font-family: "Goldman", cursive;
+}
+
+form input {
+  width: 300px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 0px solid;
+  padding: 10px;
+  border-bottom: rgb(182, 0, 0);
+  border-style: groove;
+  margin-left: 20px;
+}
+form label {
+  margin-top: 10px;
+  font-size: 20px;
+  color: #ffffff;
+  flex-direction: column;
+  display: flex;
+  flex-direction: column;
+}
+
+form button {
+  width: 130px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 0px solid;
+  border-bottom: #a50404;
+  border-style: groove;
+  color: #a50404;
+  padding: 7px;
+  cursor: pointer;
+}
+
+form button:hover {
+  filter: brightness(0.8);
+}
+
+small {
+  margin-top: -20px;
+}
+
+.logo-principal {
+  border-radius: 50%;
+  margin-left: 100px;
+  opacity: 0.8;
+  box-shadow: 0px 0px 30px #04a596, 0px 0px 10px silver;
+  animation: colors 22s ease infinite;
+}
+
+@keyframes colors {
+  0% {
+    box-shadow: 0px 0px 30px #ffffff, 0px 0px 10px silver;
+  }
+  30% {
+    box-shadow: 0px 0px 30px #04a596, 0px 0px 10px silver;
+  }
+  50% {
+    box-shadow: 0px 0px 30px #a50404, 0px 0px 10px silver;
+  }
+  100% {
+    box-shadow: 0px 0px 30px #2bff00, 0px 0px 10px silver;
+  }
+}
+.link-cadastro {
+  display: inline;
+  margin: 0 0 0 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin-top: -5px;
+}
+
+.link-cadastro a {
+  margin-left: 10px;
+  color: rgb(0, 110, 220);
+  text-decoration: none;
+}
+
+.link-cadastro a:hover {
+  text-decoration: underline;
+}
+.link-cadastro p {
+  margin-top: 14px;
+}
+@media screen and (max-width: 1680px) {
+  .navbar li {
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .logo-principal {
+    width: 400px;
+  }
+  form {
+    width: 400px;
+  }
+  .navbar li {
+    margin-left: 260px;
+  }
+  .link-cadastro {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .navbar li {
+    margin-left: 220px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .navbar li {
+    margin-left: 220px;
+    font-size: 30px;
+  }
+  .logo-principal {
+    width: 300px;
+  }
+  .contato {
+    font-size: 20px;
+  }
+  form {
+    width: 350px;
+    height: 500px;
+  }
+  form input {
+    width: 250px;
+    padding: 6px;
+    font-size: 10px;
+  }
+  form label {
+    font-size: 20px;
+  }
+  form button {
+    padding: 4px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .principal {
+    flex-direction: column;
+  }
+  .logo-mobile {
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    opacity: 0.6;
+    box-shadow: 0px 0px 30px #04a596, 0px 0px 10px silver;
+    animation: colors 22s ease infinite;
+    margin-top: -80px;
+  }
+  .logo-principal {
+    display: none;
+  }
+  form {
+    margin-top: 40px;
+    height: 450px;
+  }
+  form label {
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  small {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 655px) {
+  .navbar li {
+    font-size: 20px;
+  }
+
+  form {
+    height: 380px;
+  }
+
+  form label {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  form input {
+    padding: 4px;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar li {
+    font-size: 20px;
+  }
+
+  form {
+    height: 380px;
+    margin-top: 20px;
+    height: 430px;
+  }
+
+  form label {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  form input {
+    padding: 4px;
+    margin-top: 5px;
+  }
+  small {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .navbar li {
+    font-size: 20px;
+  }
+  .logo-mobile {
+    display: flex;
+    width: 70px;
+  }
+  form {
+    height: 380px;
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  form label {
+    font-size: 10px;
+    margin-top: 5px;
+  }
+  form input {
+    padding: 4px;
+    margin-top: 5px;
+  }
+  small {
+    font-size: 9px;
+  }
+}

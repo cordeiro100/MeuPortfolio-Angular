@@ -1,0 +1,67 @@
+<div class="total">
+    <nav class="navbar navbar-expand-lg navbar-light" style="opacity: 0.7;">
+        <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+               <a href="https://www.linkedin.com/in/lucas-rafael-cordeiro/"><i class="bi bi-linkedin"></i></a>
+              </li>
+              <li class="nav-item">
+               <a href="https://github.com/cordeiro100"><i class="bi bi-github"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="https://www.instagram.com/lucasrcordeiro100/"><i class="bi bi-instagram"></i></a>
+              </li>
+             </ul>
+          </div>
+        </div>
+      </nav>
+    
+    
+    
+      <div class="principal">
+        <img class="logo-mobile" src="assets/logo.png">
+       <form #userForm="ngForm" [formGroup]="registerForm" (ngSubmit)="registrar()">
+        
+        <label for="nome">Digite seu nome</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu primeiro nome" formControlName="nome" [(ngModel)]="userModel.nome">
+        <small *ngIf="registerForm.get('nome')?.errors?.['required']" class="text-danger d-block mt-2">
+            Um nome é necessário
+          </small>
+
+        <label for="sobrenome">Digite seu sobrenome</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu último nome" formControlName="sobrenome" [(ngModel)]="userModel.sobrenome">
+        <small *ngIf="registerForm.get('sobrenome')?.errors?.['required']" class="text-danger d-block mt-2">
+            Um sobrenome é necessário
+        </small>
+
+        <label for="email">Digite seu email</label>
+        <input type="email" id="email" name="email" placeholder="Digite um email válido" formControlName="email" [(ngModel)]="userModel.email">
+        <small *ngIf="registerForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+            Um email válido é necessário
+          </small>
+     
+      
+        
+        <label for="password">Digite uma senha</label>
+        <input type="password" id="password" name="password" placeholder="Mínimo de 6 caracteres" formControlName="password" [(ngModel)]="userModel.password">  
+        <small *ngIf="registerForm.get('password')?.errors?.['required']" class="text-danger d-block mt-2">
+            Uma senha é necessária
+          </small>
+    
+      
+    
+        <button id="botao-login "type="submit" [disabled]="!registerForm.valid">Cadastrar</button>
+        <div class="link-cadastro">
+          <p>Já possui um cadastro?</p>
+          <a routerLink="/">Clique aqui para logar</a>
+        </div>
+    </form>
+    <img class="logo-principal" src="assets/logo.png">
+    
+    
+    </div>
+    </div>

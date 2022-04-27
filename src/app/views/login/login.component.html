@@ -1,0 +1,56 @@
+<div class="total">
+<nav class="navbar navbar-expand-lg navbar-light" style="opacity: 0.7;">
+    <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+           <a href="https://www.linkedin.com/in/lucas-rafael-cordeiro/"><i class="bi bi-linkedin"></i></a>
+          </li>
+          <li class="nav-item">
+           <a href="https://github.com/cordeiro100"><i class="bi bi-github"></i></a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.instagram.com/lucasrcordeiro100/"><i class="bi bi-instagram"></i></a>
+          </li>
+         </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="contato"> 
+  <p>Contato: (31) 99931-2870</p>
+</div>
+
+
+
+  <div class="principal">
+    <img class="logo-mobile"src="assets/logo.png">
+   <form #userForm="ngForm" [formGroup]="loginForm" (ngSubmit)="logar()">
+    
+    <label for="email">Digite seu email</label>
+    <input type="email" id="email" name="email" placeholder="Digite um email válido" formControlName="email" [(ngModel)]="userModel.email">
+    <small *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+      Um email é necessário
+    </small>
+  
+    
+    <label for="password">Digite uma senha</label>
+    <input type="password" id="password" name="password" placeholder="Digite sua senha" formControlName="password" [(ngModel)]="userModel.password"> 
+    <small *ngIf="loginForm.get('email')?.errors?.['required']" class="text-danger d-block mt-2">
+      Uma senha é necessária
+    </small>
+  
+
+    <button id="botao-login "type="submit" [disabled]="!loginForm.valid">Logar</button>
+    <div class="link-cadastro">
+      <p>Novo por aqui?</p>
+      <a routerLink="cadastro">Crie a sua conta</a>
+    </div>
+</form>
+<img class="logo-principal" src="assets/logo.png">
+
+
+</div>
+</div>

@@ -1,0 +1,394 @@
+<body>
+    <nav
+      class="navbar navbar-expand-lg navbar-light fixed-top"
+      style="background-color: rgb(255, 217, 0)"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand link-logo" routerLink="/main"
+          ><img
+            class="foto-logo"
+            src="assets/fruta.png"
+            alt="Foto da logomarca Fruta&Fruto no menu de navegação"
+        /></a>
+        <h1><a class="home-link" href="">Fruta&Fruto </a></h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#receitas">Receita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contato">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+    <title>fruto & fruta</title>
+  
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="assets/carrossel-img2.jpg"
+            class="d-block w-100 imagem-carrossel"
+            alt="Foto ilustrativa do carrossel"
+          />
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo display-4">
+              Reaproveite melhor os alimentos!
+            </h1>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="assets/carrossel-img1.jpg"
+            class="d-block w-100 imagem-carrossel"
+            alt="Foto ilustrativa do carrossel"
+          />
+          <div class="carousel-caption d-none d-md-block h-50">
+            <h1 class="fonte-titulo display-4">Economize e ganhe em saúde!</h1>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <main>
+      <div class="background-central">
+        <h1 class="text-center fonte-titulo cor-titulo pt-5">
+          Receitas para economizar e ganhar saúde
+        </h1>
+        <p class="text-center text-secondary pb-5">
+          Nossas receitas ajudam você a aproveitar melhor os alimentos,
+          economizar, ganhar tempo e praticidade
+        </p>
+      </div>
+      <div class="receita-board">
+        <div *ngIf="tigelaAbacate" class="tigela-abacate-receita">
+          <h1>Tigela de abacate</h1>
+          <p>
+            Abacate na Tigela Rendimento: 4 porções.<br />
+            Nível de Dificuldade: Fácil.<br />
+            Tempo de Preparo: 5 min.<br />
+            Armazenamento: melhor comer na hora!<br />
+          </p>
+          <h5>Ingredientes</h5>
+          3 xícaras de chá de abacate picado congelado<br />
+          2 bananas congeladas picadas<br />
+          2 colheres de sopa de mel ou açúcar mascavo<br />
+          Cerca de 1/2 xícara de chá de água<br />
+          <h5>Modo de Preparo</h5>
+          Coloque o abacate picado em um processador de alimentos e processe (no
+          modo pulsar).<br />
+          Adicione a banana picada e a água e processe, pulsando, até que vire um
+          creme.<br />
+          Acrescente, se quiser, o mel e bata mais um pouco.<br />
+          Sirva imediatamente!
+        </div>
+  
+        <div *ngIf="saladaKiwi" class="kiwi-receita">
+          <h1>Salada de Kiwi</h1>
+          <br />
+          <p>
+            1 unidade de kiwi<br />
+            100 gramas de rúcula<br />
+            8 gramas de amêndoas<br />
+            1 colher de sopa de sementes de girassol<br />
+            2 colheres de sopa de azeite de oliva<br />
+            1 unidade de limão<br />
+            1 pitada de sal<br />
+            1 pitada de pimenta do reino<br />
+            1 pitada de açúcar (opcional)
+          </p>
+          <h5>Como fazer Salada verde com kiwi:</h5>
+          <br />
+          <p>
+            Antes de começar preparando esta salada leve e saudável, o primeiro
+            passo é reunir os ingredientes.<br />
+            Descasque e corte o kiwi em rodelas finas. Para que seja mais fácil
+            descascar, corte os topos e use uma colher para separar a polpa da
+            pele.<br />
+            Prepare a salada colocando em uma tigela a rúcula lavada cortada em
+            pedaços e os restantes ingredientes com exceção das amêndoas, que
+            reservamos para decoração.<br />
+            Misture tudo e sirva esses ingredientes com o kiwi e as amêndoas
+            picadas. Você pode comer esta salada verde com kiwi como uma refeição
+            leve ou acompanhamento de outras receitas saudáveis, como frango
+            defumado ou truta assada. Bom apetite!
+          </p>
+        </div>
+        <div *ngIf="mixVegetais" class="mix-receita">
+          <h1>Mix de Vegetais</h1>
+          <br />
+          <p>
+            Ingredientes para fazer Mix de legumes refogados na manteiga:<br />
+            150 gramas de brócolis<br />
+            150 gramas de couve-flor<br />
+            100 gramas de vagem<br />
+            3 batatas baroas<br />
+            5 fatias de abóbora assada<br />
+            1 colher de sopa de manteiga<br />
+            1 colher de sopa de água Sal a gosto
+          </p>
+          <h5>Como fazer Mix de legumes refogados na manteiga:</h5>
+          <br />
+          <p>
+            Para o preparo da abóbora fatie o legume com a casca mesmo, coloque em
+            uma forma untada com azeite, salpique canela e leve para assar a 180ºC
+            até dourar. Esse é um jeito bem simples de cozinhar abóbora mas, se
+            você preferir, também pode cozer numa panela no fogo com água.<br />
+            Para cozinhar as batatas descasque-as, lave bem e enrole em um papel
+            toalha. Leve para o microondas por 3 minutos e reserve. Como você pode
+            ver, este é um truque rápido e prático de cozinhar batata.<br />
+            Agora é hora de preparar os restantes legumes. Em uma panela coloque a
+            manteiga, o brócolis, a couve-flor, a vagem e uma colher de água.
+            Tampe e deixe cozinhar em fogo baixo até os legumes ficarem macios.<br />
+            Enquanto isso fatie as batatas baroas e a abóbora cabotiá assada.<br />
+            Assim que os legumes ficarem verdinhos e cozidos, junte a batata e a
+            abóbora. Finalize com uma pitada de sal, misture e refogue por mais um
+            pouco.<br />
+            Depois disso está pronto seu mix de legumes refogados na manteiga!
+            Sirva como acompanhamento de suas receitas de peixe ou de carne e
+            desfrute da mistura de sabores e texturas.
+          </p>
+        </div>
+        <div *ngIf="pimentoes" class="pimentoes-receita">
+          <h1>Pimentões à Juliana</h1>
+          <p>
+            2 cenoura cortadas em tiras finas<br />
+            3 colheres (sopa) de óleo<br />
+            1 cebola cortada em fatias finas<br />
+            1/2 maço de brócolis cortados em pedaços<br />
+            1/2 colher (chá) de açúcar<br />
+            1 vidro de cogumelo variado | variados (100g) <br />
+            sal a gosto
+          </p>
+          <h5>Modo de preparo</h5>
+          <p>
+            Aqueça o óleo em uma panela. <br />
+            Ponha as cenouras, a cebola e os brócolis e cozinhe por 4 minutos, sem
+            parar de mexer Tempere com o sal, junte o<br />
+            açúcar e os cogumelos com o líquido do vidro. Cozinhe até que os<br />
+            legumes estejam macios, por mais cerca de 20 minutos. <br />
+            Sirva quente.
+          </p>
+        </div>
+        <div *ngIf="oriental" class="oriental-receita">
+          <h1>Prato oriental</h1>
+          <h5>Ingredientes</h5>
+          <p>
+            400g de atum<br />
+            4 batatas-baroa (mandioquinha)<br />
+            1 bandejinha de shimeji<br />
+            2 colheres (sopa) de manteiga<br />
+            2 colheres (sopa) de shoyu<br />
+            2 colheres (sopa) de creme de leite<br />
+            2 colheres (sopa) de azeite de oliva<br />
+            2 colheres (sopa) de gergelim branco<br />
+            2 colheres (sopa) de gergelim preto<br />
+            1 cebolinhas picada<br />
+            Sal e pimenta-do-reino preta moída a gosto<br />
+            Wasabi (raíz forte) para servir a gosto<br />
+            Molho tarê para finalizar a gosto
+          </p>
+          <p>
+            Comece pelo purê de mandioquinha: cozinhe as batatas-baroa até
+            amolecer. Espere esfriar um pouco e bata no liquidificador com o creme
+            de leite.<br />
+            Para o shimeji: lave os cogumelos e corte os talos de modo que fiquem
+            todos soltos.<br />
+            Esquente uma frigideira e coloque a manteiga para derreter. Logo,
+            adicione o shimeji e mexa por uns 3 minutos. Acrescente o shoyu e
+            mexa.<br />
+            Depois, adicione a cebolinha, abafe com a tampa e desligue o fogo.<br />
+            Para o atum: tempere o peixe com sal e pimenta, corte em finas fatias
+            e passe no azeite. <br />
+            Em um prato, coloque o gergelim preto e o branco e passe o atum nessa
+            mistura.<br />
+            Aqueça outra frigideira com um pouco de azeite e adicione as fatias de
+            atum com crosta de gergelim. A parte de selar é rápida: deixe por 1
+            minuto, depois vire e deixe por mais 1 minuto. <br />
+            Sirva tudo em um prato conforme seu gosto!
+          </p>
+        </div>
+      </div>
+  
+      <div class="fotos-card">
+        <section class="container">
+          <div class="row justify-content-center">
+            <div
+              id="receitas"
+              class="card col-12 p-0 m-4"
+              style="max-width: 18rem"
+            >
+              <img
+                src="assets/receita-abacate.jpg"
+                class="card-img-top"
+                alt="Foto da receita de abacate"
+              />
+              <div class="card-body tamanho-card">
+                <h5 class="card-title">Tigela de abacate</h5>
+                <p class="card-text">
+                  Receita refrescante e cheia de vitaminas para o seu café da
+                  manhã!
+                </p>
+                <a  class="btn btn-primary" (click)="receitaAbacate()"
+                  >Veja a receita</a
+                >
+              </div>
+            </div>
+  
+            <div class="card col-12 p-0 m-4" style="max-width: 18rem">
+              <img
+                class="kiwi-foto"
+                src="assets/receita-kiwi.jpg"
+                class="card-img-top"
+                alt="Foto da receita de kiwi"
+              />
+              <div class="card-body tamanho-card">
+                <h5 class="card-title">Salada de Kiwi</h5>
+                <p class="card-text">
+                  Receita refrescante e cheia de vitaminas para o seu café da
+                  manhã!
+                </p>
+                <a  class="btn btn-primary" (click)="receitaKiwi()"
+                  >Veja a receita</a
+                >
+              </div>
+            </div>
+  
+            <div class="card col-12 p-0 m-4" style="max-width: 18rem">
+              <img
+                src="assets/receita-mix.jpg"
+                class="card-img-top"
+                alt="Foto da receita mix"
+              />
+              <div class="card-body tamanho-card">
+                <h5 class="card-title">Mix de vegetais</h5>
+                <p class="card-text">
+                  Receita refrescante e cheia de vitaminas para o seu café da
+                  manhã!
+                </p>
+                <a  class="btn btn-primary" (click)="receitaVegetais()"
+                  >Veja a receita</a
+                >
+              </div>
+            </div>
+  
+            <div class="card col-12 p-0 m-4" style="max-width: 18rem">
+              <img
+                src="assets/receita-pimentoes.jpg"
+                class="card-img-top"
+                alt="Foto da receita pimentoes"
+              />
+              <div class="card-body tamanho-card">
+                <h5 class="card-title">Pimentões à Juliana</h5>
+                <p class="card-text">
+                  Receita refrescante e cheia de vitaminas para o seu café da
+                  manhã!
+                </p>
+                <a class="btn btn-primary" (click)="receitaPimentoes()"
+                  >Veja a receita</a
+                >
+              </div>
+            </div>
+  
+            <div class="card col-12 p-0 m-4" style="max-width: 18rem">
+              <img
+                src="assets/receita-oriental.jpg"
+                class="card-img-top"
+                alt="Foto da receita oriental"
+              />
+              <div class="card-body tamanho-card">
+                <h5 class="card-title">Prato oriental</h5>
+                <p class="card-text">
+                  Receita refrescante e cheia de vitaminas para o seu café da
+                  manhã!
+                </p>
+                <a class="btn btn-primary" (click)="receitaOriental()"
+                  >Veja a receita</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <ul>
+        <li class="titulo-rodape">Para mais detalhes:</li>
+        <p id="contato">mosscordeiro@hotmail.com</p>
+      </ul>
+      <ul>
+        <a href="https://www.instagram.com/lucasrcordeiro100/"
+          ><img
+            class="foto-insta"
+            src="assets/insta.png"
+            alt="Foto da logo do Instagram"
+        /></a>
+      </ul>
+      <ul>
+        <a href="https://www.linkedin.com/in/lucas-rafael-cordeiro-419715228/"
+          ><img
+            class="foto-linkedin"
+            src="assets/linkedin.png"
+            alt="Foto da logo do linkedin"
+        /></a>
+      </ul>
+    </footer>
+  </body>
+  

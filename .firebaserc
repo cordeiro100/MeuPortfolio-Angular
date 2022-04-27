@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "porfoliocordeiroangular": {
+      "hosting": {
+        "cordeiroangular": [
+          "porfoliocordeiroangular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "porfoliocordeiroangular"
+  }
+}

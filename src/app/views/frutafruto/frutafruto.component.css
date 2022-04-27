@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import 'animate.css';
+
+.foto-logo {
+  width: 100px;
+  border-radius: 50%;
+}
+.home-link {
+  text-decoration: none;
+  color: black;
+  font-family: "Bebas Neue", cursive;
+}
+.navbar h1 {
+  margin-left: 100px;
+  font-size: 70px;
+  font-family: "Bebas Neue", cursive;
+}
+.navbar-nav {
+  text-transform: uppercase;
+  color: black;
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+}
+.card {
+  width: 215px;
+}
+.imagem-carrossel {
+  object-fit: cover;
+  object-position: 0 80%;
+  height: 400px;
+}
+.fotos-card {
+  animation: backInLeft;
+  animation-duration: 1s;
+}
+main {
+  background: linear-gradient(45deg, #45a5ff, #beff0a, #ff4c1b, #e77000);
+  background-size: 300% 300%;
+  font-family: "Bebas Neue", cursive;
+  animation: colors 15s ease infinite;
+}
+@keyframes colors {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.background-central {
+  background-color: rgb(255, 255, 255);
+}
+.fonte-titulo {
+  font-family: "Pacifico", cursive;
+}
+.cor-titulo {
+  color: darkred;
+}
+.borda-red {
+  border-color: darkred;
+}
+.tamanho-card {
+  object-fit: cover;
+  height: 200px;
+}
+.fotos-card img {
+  height: 215px;
+}
+footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+footer p {
+  font-size: 20px;
+  margin-left: 100px;
+  font-family: "Bebas Neue", cursive;
+}
+footer li {
+  text-transform: uppercase;
+  margin-left: 100px;
+  margin-top: 35px;
+  font-family: "Bebas Neue", cursive;
+}
+.foto-insta {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 15px;
+  background-color: rgb(255, 217, 0);
+}
+.foto-linkedin {
+  width: 100px;
+  border-radius: 50%;
+  margin-left: 100px;
+  margin-top: 15px;
+}
+
+/* QUADRO DE RECEITAS */
+
+.receita-board {
+  display: flex;
+  justify-content: center;
+  animation: rubberBand;
+  animation-delay: 2s;
+}
+.tigela-abacate-receita {
+  background: rgba(255, 255, 255, 0.486);
+  border: 0px solid;
+  color: black;
+  height: cover;
+  border-radius: 8px;
+  width: 600px;
+  color: rgb(102, 102, 102);
+}
+.kiwi-receita {
+  background: rgba(255, 255, 255, 0.486);
+  border: 0px solid;
+  color: black;
+  height: cover;
+  border-radius: 8px;
+  width: 1000px;
+  color: rgb(102, 102, 102);
+}
+.mix-receita {
+  background: rgba(255, 255, 255, 0.486);
+  border: 0px solid;
+  color: black;
+  height: cover;
+  border-radius: 8px;
+  width: 1000px;
+  color: rgb(102, 102, 102);
+}
+.pimentoes-receita {
+  background: rgba(255, 255, 255, 0.486);
+  border: 0px solid;
+  color: black;
+  height: cover;
+  border-radius: 8px;
+  width: 1000px;
+  color: rgb(102, 102, 102);
+}
+.oriental-receita {
+  background: rgba(255, 255, 255, 0.486);
+  border: 0px solid;
+  color: black;
+  height: cover;
+  border-radius: 8px;
+  width: 1000px;
+  color: rgb(102, 102, 102);
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1200px) {
+  .foto-logo {
+    width: 70px;
+  }
+  .navbar h1 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .foto-logo {
+    width: 50px;
+  }
+  .navbar h1 {
+    font-size: 30px;
+  }
+  .foto-insta {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .foto-linkedin {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .foto-logo {
+    width: 50px;
+  }
+  .navbar h1 {
+    font-size: 30px;
+    margin-right: 110px;
+  }
+  footer p {
+    font-size: 20px;
+    margin-left: 30px;
+    font-family: "Bebas Neue", cursive;
+  }
+  footer li {
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 35px;
+    font-family: "Bebas Neue", cursive;
+  }
+  .foto-insta {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color: rgb(255, 255, 255);
+  }
+  .foto-linkedin {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 15px;
+  }
+}
